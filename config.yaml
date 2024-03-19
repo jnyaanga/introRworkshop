@@ -1,0 +1,46 @@
+baseurl:  "https://luriechildrensbioinformatics.github.io/introR"
+publishDir: "docs"
+languageCode: en-us
+title: Intro to R
+theme: "hugo-ivy"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.utf8\\.md$"]
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+enableGitInfo: true
+
+permalinks:
+  post: /:slug/
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Workshop details
+      url: /syllabus.pdf
+      weight: 2
+    - name: Material
+      url: /material/
+      weight: 3
+    - name: Resources
+      url: /resources/
+      weight: 4
+    - name: R Installation
+      url: /install/
+      weight: 6
+
+params:
+  description: "Fall 2023 Intro to R workshop."
+  footer: "Website built in R. \nPowered by [Hugo](https://gohugo.io/), [blogdown](https://github.com/rstudio/blogdown) and [the Ivy theme](https://github.com/yihui/hugo-ivy)"
+  highlightjsLang: ["latex", "r", "yaml"]
+  highlightjsTheme: "github"
+  highlightjsVersion: "11.7.0"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
